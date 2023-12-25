@@ -1,0 +1,22 @@
+.header{
+
+    background-color: gray;
+    height: 20vh;
+  
+ }
+
+ .me-auto {
+    margin-left: 30%;
+    gap: 10px;
+ }
+ 
+.rr{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-left: 50%;
+}
+
+.cart{
+    margin-right: 1%;
+}
