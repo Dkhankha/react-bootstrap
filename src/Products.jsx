@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ListProduct from './ListProduct';
-import "./Products.css";
+
 const productsArr = [
     {
         title: 'Colors',
@@ -27,7 +27,7 @@ const productsArr = [
 const Products = () => {
     const [myProd, setMyProd] = useState(productsArr)
     return (
-        <div className='products'>
+        <div>
             {myProd.map((prod) => (
                <ListProduct 
                price={prod.price}

@@ -1,23 +1,16 @@
-import React from 'react'
-import "./ListProduct.css"
-import {Button,Row,Col,Container,Image} from "react-bootstrap";
+import React from 'react';
+import { Card, Button } from "react-bootstrap"
 const ListProduct = (props) => {
     return (
-    <Container>
-            <Row>
-                <Col xl={12}>
-                    <div className='combo'>
-                        <Image src={props.image} fluid />
-                        <div className='tog'>
-                            <h5>${props.price}</h5>
-                            <Button bg="info" data-bs-theme="dark">Add</Button>{' '}
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
-    
-      
+        <>
+            <Card className='mx-5 my-5 d-inline-block' style={{ width: '25rem' }}>
+                <Card.Img style={{padding:"2rem", borderRadius:"20px"}} variant="top" src={props.image} className=''/>
+                <Card.Body style={{display:"flex", alignItems:"center",justifyContent:"space-between"}}>
+                    <Card.Title>{props.price}</Card.Title>
+                    <Button variant="primary">Add</Button>
+                </Card.Body>
+            </Card>
+        </>
     )
 }
 

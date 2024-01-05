@@ -1,28 +1,27 @@
 import React from 'react';
 import {Navbar,Nav, Container,Button} from "react-bootstrap";
-import "./Layout.css";
+
 const Layout = () => {
   return (
     <>
-    <Navbar expand="lg" bg="dark" variant="dark">
-    <Container>
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#store">Store</Nav.Link>
-          <Nav.Link href="#About">About</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-    <Button variant="info" className='cart'>Cart</Button>{' '}
-  </Navbar>
-  <Navbar className='header justify-content-center'> 
-        <Container>
-          <Navbar.Brand className='rr'>Generics</Navbar.Brand> 
-        </Container>
-      </Navbar>
+<Navbar style={{background:"black"}}>
+      <Container style={{marginLeft:"40%"}} >
+          <Nav
+            className="my-2 me-auto my-lg-0"
+            navbarScroll
+          >
+            <Nav.Link href="#action1" style={{color:"white"}}>HOME</Nav.Link>
+            <Nav.Link href="#action2" style={{color:"white"}}>ABOUT</Nav.Link>
+            <Nav.Link href="#"  style={{color:"white"}}>
+              STORE
+            </Nav.Link>
+          </Nav>
+         <Button>Cart</Button>
+      </Container>
+    </Navbar>
+    <Navbar style={{background:"gray",padding:"1.5rem",marginTop:"1px", display: "flex", justifyContent: "center" }}>
+      <h2 >Generics</h2>
+    </Navbar>
     </>
   )
 }
